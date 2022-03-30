@@ -1,0 +1,333 @@
+2022-03-29 17:19:48,033:INFO: Creating the datasets...
+2022-03-29 17:19:48,249:INFO: Starting hyperparameter search for {params.hp_search_epochs} epoch(s)
+2022-03-29 17:19:48,389:INFO: ---Starting Run: 0:
+2022-03-29 17:19:48,389:INFO: learning_rate: 1e-05
+2022-03-29 17:19:48,390:INFO: dropout: 0.1
+2022-03-29 17:19:48,390:INFO: bn_momentum: 0.1
+2022-03-29 17:20:26,324:INFO: train loss: 1.3686, train acc: 0.4780
+2022-03-29 17:20:26,324:INFO: val loss: 1.2382, val acc: 0.5926
+2022-03-29 17:20:26,324:INFO: Time taken: 3.78
+2022-03-29 17:20:26,419:INFO: ---Starting Run: 1:
+2022-03-29 17:20:26,419:INFO: learning_rate: 1e-05
+2022-03-29 17:20:26,419:INFO: dropout: 0.1
+2022-03-29 17:20:26,420:INFO: bn_momentum: 0.4
+2022-03-29 17:21:04,963:INFO: train loss: 1.4246, train acc: 0.4329
+2022-03-29 17:21:04,964:INFO: val loss: 1.2695, val acc: 0.5833
+2022-03-29 17:21:04,964:INFO: Time taken: 3.76
+2022-03-29 17:21:05,065:INFO: ---Starting Run: 2:
+2022-03-29 17:21:05,065:INFO: learning_rate: 1e-05
+2022-03-29 17:21:05,066:INFO: dropout: 0.1
+2022-03-29 17:21:05,066:INFO: bn_momentum: 0.8
+2022-03-29 17:21:43,678:INFO: train loss: 1.4589, train acc: 0.4456
+2022-03-29 17:21:43,678:INFO: val loss: 1.3363, val acc: 0.5880
+2022-03-29 17:21:43,678:INFO: Time taken: 3.85
+2022-03-29 17:21:43,772:INFO: ---Starting Run: 3:
+2022-03-29 17:21:43,772:INFO: learning_rate: 1e-05
+2022-03-29 17:21:43,773:INFO: dropout: 0.2
+2022-03-29 17:21:43,773:INFO: bn_momentum: 0.1
+2022-03-29 17:22:22,439:INFO: train loss: 1.5281, train acc: 0.3854
+2022-03-29 17:22:22,440:INFO: val loss: 1.3917, val acc: 0.5602
+2022-03-29 17:22:22,440:INFO: Time taken: 3.85
+2022-03-29 17:22:22,538:INFO: ---Starting Run: 4:
+2022-03-29 17:22:22,538:INFO: learning_rate: 1e-05
+2022-03-29 17:22:22,539:INFO: dropout: 0.2
+2022-03-29 17:22:22,539:INFO: bn_momentum: 0.4
+2022-03-29 17:23:01,293:INFO: train loss: 1.3944, train acc: 0.4398
+2022-03-29 17:23:01,293:INFO: val loss: 1.2664, val acc: 0.5231
+2022-03-29 17:23:01,293:INFO: Time taken: 3.92
+2022-03-29 17:23:01,399:INFO: ---Starting Run: 5:
+2022-03-29 17:23:01,399:INFO: learning_rate: 1e-05
+2022-03-29 17:23:01,399:INFO: dropout: 0.2
+2022-03-29 17:23:01,399:INFO: bn_momentum: 0.8
+2022-03-29 17:23:40,784:INFO: train loss: 1.3745, train acc: 0.4722
+2022-03-29 17:23:40,784:INFO: val loss: 1.2312, val acc: 0.5972
+2022-03-29 17:23:40,785:INFO: Time taken: 3.82
+2022-03-29 17:23:40,878:INFO: ---Starting Run: 6:
+2022-03-29 17:23:40,879:INFO: learning_rate: 1e-05
+2022-03-29 17:23:40,879:INFO: dropout: 0.4
+2022-03-29 17:23:40,880:INFO: bn_momentum: 0.1
+2022-03-29 17:24:20,751:INFO: train loss: 1.5937, train acc: 0.3495
+2022-03-29 17:24:20,751:INFO: val loss: 1.4459, val acc: 0.5046
+2022-03-29 17:24:20,751:INFO: Time taken: 3.86
+2022-03-29 17:24:20,850:INFO: ---Starting Run: 7:
+2022-03-29 17:24:20,851:INFO: learning_rate: 1e-05
+2022-03-29 17:24:20,851:INFO: dropout: 0.4
+2022-03-29 17:24:20,851:INFO: bn_momentum: 0.4
+2022-03-29 17:24:59,603:INFO: train loss: 1.6228, train acc: 0.3067
+2022-03-29 17:24:59,604:INFO: val loss: 1.4482, val acc: 0.5139
+2022-03-29 17:24:59,604:INFO: Time taken: 3.83
+2022-03-29 17:24:59,701:INFO: ---Starting Run: 8:
+2022-03-29 17:24:59,702:INFO: learning_rate: 1e-05
+2022-03-29 17:24:59,702:INFO: dropout: 0.4
+2022-03-29 17:24:59,702:INFO: bn_momentum: 0.8
+2022-03-29 17:25:38,605:INFO: train loss: 1.5157, train acc: 0.3924
+2022-03-29 17:25:38,606:INFO: val loss: 1.3917, val acc: 0.5787
+2022-03-29 17:25:38,606:INFO: Time taken: 3.94
+2022-03-29 17:25:38,721:INFO: ---Starting Run: 9:
+2022-03-29 17:25:38,722:INFO: learning_rate: 0.001
+2022-03-29 17:25:38,722:INFO: dropout: 0.1
+2022-03-29 17:25:38,722:INFO: bn_momentum: 0.1
+2022-03-29 17:26:18,218:INFO: train loss: 0.3338, train acc: 0.8762
+2022-03-29 17:26:18,219:INFO: val loss: 0.2482, val acc: 0.9120
+2022-03-29 17:26:18,219:INFO: Time taken: 3.97
+2022-03-29 17:26:18,314:INFO: ---Starting Run: 10:
+2022-03-29 17:26:18,314:INFO: learning_rate: 0.001
+2022-03-29 17:26:18,315:INFO: dropout: 0.1
+2022-03-29 17:26:18,315:INFO: bn_momentum: 0.4
+2022-03-29 17:26:57,634:INFO: train loss: 0.2630, train acc: 0.9005
+2022-03-29 17:26:57,634:INFO: val loss: 0.2509, val acc: 0.9167
+2022-03-29 17:26:57,634:INFO: Time taken: 3.80
+2022-03-29 17:26:57,729:INFO: ---Starting Run: 11:
+2022-03-29 17:26:57,730:INFO: learning_rate: 0.001
+2022-03-29 17:26:57,730:INFO: dropout: 0.1
+2022-03-29 17:26:57,731:INFO: bn_momentum: 0.8
+2022-03-29 17:27:36,565:INFO: train loss: 0.2711, train acc: 0.9028
+2022-03-29 17:27:36,566:INFO: val loss: 0.3543, val acc: 0.8611
+2022-03-29 17:27:36,566:INFO: Time taken: 3.84
+2022-03-29 17:27:36,663:INFO: ---Starting Run: 12:
+2022-03-29 17:27:36,663:INFO: learning_rate: 0.001
+2022-03-29 17:27:36,664:INFO: dropout: 0.2
+2022-03-29 17:27:36,664:INFO: bn_momentum: 0.1
+2022-03-29 17:28:15,490:INFO: train loss: 0.6114, train acc: 0.7650
+2022-03-29 17:28:15,490:INFO: val loss: 0.3892, val acc: 0.8565
+2022-03-29 17:28:15,490:INFO: Time taken: 3.81
+2022-03-29 17:28:15,589:INFO: ---Starting Run: 13:
+2022-03-29 17:28:15,589:INFO: learning_rate: 0.001
+2022-03-29 17:28:15,589:INFO: dropout: 0.2
+2022-03-29 17:28:15,590:INFO: bn_momentum: 0.4
+2022-03-29 17:28:54,277:INFO: train loss: 0.3557, train acc: 0.8681
+2022-03-29 17:28:54,277:INFO: val loss: 0.2317, val acc: 0.9352
+2022-03-29 17:28:54,278:INFO: Time taken: 3.79
+2022-03-29 17:28:54,374:INFO: ---Starting Run: 14:
+2022-03-29 17:28:54,375:INFO: learning_rate: 0.001
+2022-03-29 17:28:54,375:INFO: dropout: 0.2
+2022-03-29 17:28:54,376:INFO: bn_momentum: 0.8
+2022-03-29 17:29:33,827:INFO: train loss: 0.3946, train acc: 0.8657
+2022-03-29 17:29:33,827:INFO: val loss: 0.2513, val acc: 0.8843
+2022-03-29 17:29:33,827:INFO: Time taken: 3.81
+2022-03-29 17:29:33,929:INFO: ---Starting Run: 15:
+2022-03-29 17:29:33,929:INFO: learning_rate: 0.001
+2022-03-29 17:29:33,930:INFO: dropout: 0.4
+2022-03-29 17:29:33,930:INFO: bn_momentum: 0.1
+2022-03-29 17:30:12,922:INFO: train loss: 0.7203, train acc: 0.7280
+2022-03-29 17:30:12,923:INFO: val loss: 0.4654, val acc: 0.8565
+2022-03-29 17:30:12,923:INFO: Time taken: 3.85
+2022-03-29 17:30:13,117:INFO: ---Starting Run: 16:
+2022-03-29 17:30:13,118:INFO: learning_rate: 0.001
+2022-03-29 17:30:13,118:INFO: dropout: 0.4
+2022-03-29 17:30:13,119:INFO: bn_momentum: 0.4
+2022-03-29 17:30:52,052:INFO: train loss: 0.4638, train acc: 0.8403
+2022-03-29 17:30:52,052:INFO: val loss: 0.3077, val acc: 0.8935
+2022-03-29 17:30:52,053:INFO: Time taken: 3.82
+2022-03-29 17:30:52,156:INFO: ---Starting Run: 17:
+2022-03-29 17:30:52,157:INFO: learning_rate: 0.001
+2022-03-29 17:30:52,157:INFO: dropout: 0.4
+2022-03-29 17:30:52,157:INFO: bn_momentum: 0.8
+2022-03-29 17:31:31,132:INFO: train loss: 0.7058, train acc: 0.7431
+2022-03-29 17:31:31,133:INFO: val loss: 0.6712, val acc: 0.7685
+2022-03-29 17:31:31,133:INFO: Time taken: 3.77
+2022-03-29 17:31:31,231:INFO: ---Starting Run: 18:
+2022-03-29 17:31:31,231:INFO: learning_rate: 0.1
+2022-03-29 17:31:31,232:INFO: dropout: 0.1
+2022-03-29 17:31:31,232:INFO: bn_momentum: 0.1
+2022-03-29 17:32:11,374:INFO: train loss: 1.7974, train acc: 0.1574
+2022-03-29 17:32:11,374:INFO: val loss: 1.7911, val acc: 0.1713
+2022-03-29 17:32:11,374:INFO: Time taken: 3.99
+2022-03-29 17:32:11,469:INFO: ---Starting Run: 19:
+2022-03-29 17:32:11,470:INFO: learning_rate: 0.1
+2022-03-29 17:32:11,470:INFO: dropout: 0.1
+2022-03-29 17:32:11,471:INFO: bn_momentum: 0.4
+2022-03-29 17:32:51,141:INFO: train loss: 1.7998, train acc: 0.1447
+2022-03-29 17:32:51,141:INFO: val loss: 1.7934, val acc: 0.1528
+2022-03-29 17:32:51,142:INFO: Time taken: 3.82
+2022-03-29 17:32:51,235:INFO: ---Starting Run: 20:
+2022-03-29 17:32:51,235:INFO: learning_rate: 0.1
+2022-03-29 17:32:51,235:INFO: dropout: 0.1
+2022-03-29 17:32:51,236:INFO: bn_momentum: 0.8
+2022-03-29 17:33:29,986:INFO: train loss: 1.8066, train acc: 0.1597
+2022-03-29 17:33:29,986:INFO: val loss: 1.7946, val acc: 0.1713
+2022-03-29 17:33:29,987:INFO: Time taken: 3.81
+2022-03-29 17:33:30,086:INFO: ---Starting Run: 21:
+2022-03-29 17:33:30,087:INFO: learning_rate: 0.1
+2022-03-29 17:33:30,087:INFO: dropout: 0.2
+2022-03-29 17:33:30,088:INFO: bn_momentum: 0.1
+2022-03-29 17:34:08,810:INFO: train loss: 1.8041, train acc: 0.1701
+2022-03-29 17:34:08,811:INFO: val loss: 1.7952, val acc: 0.1620
+2022-03-29 17:34:08,811:INFO: Time taken: 3.94
+2022-03-29 17:34:08,922:INFO: ---Starting Run: 22:
+2022-03-29 17:34:08,923:INFO: learning_rate: 0.1
+2022-03-29 17:34:08,923:INFO: dropout: 0.2
+2022-03-29 17:34:08,923:INFO: bn_momentum: 0.4
+2022-03-29 17:34:48,874:INFO: train loss: 1.7987, train acc: 0.1701
+2022-03-29 17:34:48,874:INFO: val loss: 1.7974, val acc: 0.1713
+2022-03-29 17:34:48,875:INFO: Time taken: 3.80
+2022-03-29 17:34:48,978:INFO: ---Starting Run: 23:
+2022-03-29 17:34:48,979:INFO: learning_rate: 0.1
+2022-03-29 17:34:48,979:INFO: dropout: 0.2
+2022-03-29 17:34:48,979:INFO: bn_momentum: 0.8
+2022-03-29 17:35:27,826:INFO: train loss: 1.7993, train acc: 0.1632
+2022-03-29 17:35:27,827:INFO: val loss: 1.7961, val acc: 0.1528
+2022-03-29 17:35:27,828:INFO: Time taken: 3.89
+2022-03-29 17:35:27,943:INFO: ---Starting Run: 24:
+2022-03-29 17:35:27,943:INFO: learning_rate: 0.1
+2022-03-29 17:35:27,944:INFO: dropout: 0.4
+2022-03-29 17:35:27,944:INFO: bn_momentum: 0.1
+2022-03-29 17:36:08,003:INFO: train loss: 2.0016, train acc: 0.1458
+2022-03-29 17:36:08,004:INFO: val loss: 1.7931, val acc: 0.1620
+2022-03-29 17:36:08,004:INFO: Time taken: 3.86
+2022-03-29 17:36:08,110:INFO: ---Starting Run: 25:
+2022-03-29 17:36:08,111:INFO: learning_rate: 0.1
+2022-03-29 17:36:08,111:INFO: dropout: 0.4
+2022-03-29 17:36:08,111:INFO: bn_momentum: 0.4
+2022-03-29 17:36:46,927:INFO: train loss: 1.7980, train acc: 0.1725
+2022-03-29 17:36:46,928:INFO: val loss: 1.7973, val acc: 0.1528
+2022-03-29 17:36:46,928:INFO: Time taken: 3.81
+2022-03-29 17:36:47,030:INFO: ---Starting Run: 26:
+2022-03-29 17:36:47,031:INFO: learning_rate: 0.1
+2022-03-29 17:36:47,031:INFO: dropout: 0.4
+2022-03-29 17:36:47,032:INFO: bn_momentum: 0.8
+2022-03-29 17:37:25,879:INFO: train loss: 1.8011, train acc: 0.1597
+2022-03-29 17:37:25,879:INFO: val loss: 1.7908, val acc: 0.1713
+2022-03-29 17:37:25,879:INFO: Time taken: 3.77
+2022-03-30 09:53:08,362:INFO: Creating the datasets...
+2022-03-30 09:53:08,670:INFO: Starting training for 20 epoch(s)
+2022-03-30 09:53:08,974:INFO: 
+Start of each epoch 0
+2022-03-30 09:53:21,053:INFO: Training loss over epoch 0: 1.9855
+2022-03-30 09:53:21,053:INFO: Training acc over epoch 0: 0.2384
+2022-03-30 09:53:21,406:INFO: Validation loss: 1.4060
+2022-03-30 09:53:21,407:INFO: Validation acc: 0.4722
+2022-03-30 09:53:21,407:INFO: Time taken: 12.43
+2022-03-30 09:53:21,408:INFO: 
+Start of each epoch 1
+2022-03-30 09:53:25,896:INFO: Training loss over epoch 1: 1.3927
+2022-03-30 09:53:25,896:INFO: Training acc over epoch 1: 0.4225
+2022-03-30 09:53:26,213:INFO: Validation loss: 1.0864
+2022-03-30 09:53:26,214:INFO: Validation acc: 0.5093
+2022-03-30 09:53:26,215:INFO: Time taken: 4.81
+2022-03-30 09:53:26,218:INFO: 
+Start of each epoch 2
+2022-03-30 09:53:30,538:INFO: Training loss over epoch 2: 1.1706
+2022-03-30 09:53:30,539:INFO: Training acc over epoch 2: 0.5150
+2022-03-30 09:53:30,842:INFO: Validation loss: 0.8991
+2022-03-30 09:53:30,842:INFO: Validation acc: 0.5926
+2022-03-30 09:53:30,843:INFO: Time taken: 4.62
+2022-03-30 09:53:30,844:INFO: 
+Start of each epoch 3
+2022-03-30 09:53:35,117:INFO: Training loss over epoch 3: 1.0336
+2022-03-30 09:53:35,117:INFO: Training acc over epoch 3: 0.5880
+2022-03-30 09:53:35,423:INFO: Validation loss: 0.9151
+2022-03-30 09:53:35,423:INFO: Validation acc: 0.6852
+2022-03-30 09:53:35,424:INFO: Time taken: 4.58
+2022-03-30 09:53:35,425:INFO: 
+Start of each epoch 4
+2022-03-30 09:53:39,638:INFO: Training loss over epoch 4: 0.8445
+2022-03-30 09:53:39,639:INFO: Training acc over epoch 4: 0.6794
+2022-03-30 09:53:39,966:INFO: Validation loss: 0.5556
+2022-03-30 09:53:39,966:INFO: Validation acc: 0.8102
+2022-03-30 09:53:39,967:INFO: Time taken: 4.54
+2022-03-30 09:53:39,968:INFO: 
+Start of each epoch 5
+2022-03-30 09:53:44,159:INFO: Training loss over epoch 5: 0.7156
+2022-03-30 09:53:44,160:INFO: Training acc over epoch 5: 0.7072
+2022-03-30 09:53:44,472:INFO: Validation loss: 0.4692
+2022-03-30 09:53:44,472:INFO: Validation acc: 0.8565
+2022-03-30 09:53:44,473:INFO: Time taken: 4.50
+2022-03-30 09:53:44,474:INFO: 
+Start of each epoch 6
+2022-03-30 09:53:48,701:INFO: Training loss over epoch 6: 0.4661
+2022-03-30 09:53:48,703:INFO: Training acc over epoch 6: 0.8183
+2022-03-30 09:53:49,055:INFO: Validation loss: 0.3744
+2022-03-30 09:53:49,056:INFO: Validation acc: 0.8796
+2022-03-30 09:53:49,056:INFO: Time taken: 4.58
+2022-03-30 09:53:49,058:INFO: 
+Start of each epoch 7
+2022-03-30 09:53:53,391:INFO: Training loss over epoch 7: 0.4533
+2022-03-30 09:53:53,391:INFO: Training acc over epoch 7: 0.8252
+2022-03-30 09:53:53,681:INFO: Validation loss: 0.4575
+2022-03-30 09:53:53,682:INFO: Validation acc: 0.7824
+2022-03-30 09:53:53,683:INFO: Time taken: 4.63
+2022-03-30 09:53:53,686:INFO: 
+Start of each epoch 8
+2022-03-30 09:53:57,981:INFO: Training loss over epoch 8: 0.4267
+2022-03-30 09:53:57,982:INFO: Training acc over epoch 8: 0.8403
+2022-03-30 09:53:58,287:INFO: Validation loss: 0.3847
+2022-03-30 09:53:58,287:INFO: Validation acc: 0.8750
+2022-03-30 09:53:58,288:INFO: Time taken: 4.60
+2022-03-30 09:53:58,289:INFO: 
+Start of each epoch 9
+2022-03-30 09:54:02,591:INFO: Training loss over epoch 9: 0.3758
+2022-03-30 09:54:02,591:INFO: Training acc over epoch 9: 0.8600
+2022-03-30 09:54:02,916:INFO: Validation loss: 0.1916
+2022-03-30 09:54:02,917:INFO: Validation acc: 0.9306
+2022-03-30 09:54:02,917:INFO: Time taken: 4.63
+2022-03-30 09:54:02,918:INFO: 
+Start of each epoch 10
+2022-03-30 09:54:07,403:INFO: Training loss over epoch 10: 0.2937
+2022-03-30 09:54:07,404:INFO: Training acc over epoch 10: 0.8981
+2022-03-30 09:54:07,724:INFO: Validation loss: 1.2346
+2022-03-30 09:54:07,724:INFO: Validation acc: 0.6250
+2022-03-30 09:54:07,724:INFO: Time taken: 4.80
+2022-03-30 09:54:07,726:INFO: 
+Start of each epoch 11
+2022-03-30 09:54:12,299:INFO: Training loss over epoch 11: 0.3065
+2022-03-30 09:54:12,300:INFO: Training acc over epoch 11: 0.8900
+2022-03-30 09:54:12,658:INFO: Validation loss: 0.2539
+2022-03-30 09:54:12,659:INFO: Validation acc: 0.9028
+2022-03-30 09:54:12,659:INFO: Time taken: 4.93
+2022-03-30 09:54:12,660:INFO: 
+Start of each epoch 12
+2022-03-30 09:54:17,708:INFO: Training loss over epoch 12: 0.1989
+2022-03-30 09:54:17,709:INFO: Training acc over epoch 12: 0.9306
+2022-03-30 09:54:18,084:INFO: Validation loss: 0.1876
+2022-03-30 09:54:18,084:INFO: Validation acc: 0.9352
+2022-03-30 09:54:18,084:INFO: Time taken: 5.42
+2022-03-30 09:54:18,086:INFO: 
+Start of each epoch 13
+2022-03-30 09:54:22,774:INFO: Training loss over epoch 13: 0.1362
+2022-03-30 09:54:22,775:INFO: Training acc over epoch 13: 0.9514
+2022-03-30 09:54:23,097:INFO: Validation loss: 0.1443
+2022-03-30 09:54:23,098:INFO: Validation acc: 0.9352
+2022-03-30 09:54:23,098:INFO: Time taken: 5.01
+2022-03-30 09:54:23,099:INFO: 
+Start of each epoch 14
+2022-03-30 09:54:27,310:INFO: Training loss over epoch 14: 0.2050
+2022-03-30 09:54:27,312:INFO: Training acc over epoch 14: 0.9375
+2022-03-30 09:54:27,640:INFO: Validation loss: 0.4733
+2022-03-30 09:54:27,640:INFO: Validation acc: 0.8519
+2022-03-30 09:54:27,641:INFO: Time taken: 4.54
+2022-03-30 09:54:27,642:INFO: 
+Start of each epoch 15
+2022-03-30 09:54:31,984:INFO: Training loss over epoch 15: 0.1700
+2022-03-30 09:54:31,985:INFO: Training acc over epoch 15: 0.9514
+2022-03-30 09:54:32,296:INFO: Validation loss: 0.1899
+2022-03-30 09:54:32,296:INFO: Validation acc: 0.9444
+2022-03-30 09:54:32,297:INFO: Time taken: 4.65
+2022-03-30 09:54:32,298:INFO: 
+Start of each epoch 16
+2022-03-30 09:54:36,605:INFO: Training loss over epoch 16: 0.2202
+2022-03-30 09:54:36,606:INFO: Training acc over epoch 16: 0.9248
+2022-03-30 09:54:36,969:INFO: Validation loss: 0.1193
+2022-03-30 09:54:36,969:INFO: Validation acc: 0.9676
+2022-03-30 09:54:36,970:INFO: Time taken: 4.67
+2022-03-30 09:54:36,972:INFO: 
+Start of each epoch 17
+2022-03-30 09:54:41,539:INFO: Training loss over epoch 17: 0.1664
+2022-03-30 09:54:41,540:INFO: Training acc over epoch 17: 0.9444
+2022-03-30 09:54:41,985:INFO: Validation loss: 0.2424
+2022-03-30 09:54:41,986:INFO: Validation acc: 0.9352
+2022-03-30 09:54:41,986:INFO: Time taken: 5.01
+2022-03-30 09:54:41,988:INFO: 
+Start of each epoch 18
+2022-03-30 09:54:46,401:INFO: Training loss over epoch 18: 0.1580
+2022-03-30 09:54:46,402:INFO: Training acc over epoch 18: 0.9433
+2022-03-30 09:54:46,759:INFO: Validation loss: 0.1488
+2022-03-30 09:54:46,760:INFO: Validation acc: 0.9491
+2022-03-30 09:54:46,760:INFO: Time taken: 4.77
+2022-03-30 09:54:46,762:INFO: 
+Start of each epoch 19
+2022-03-30 09:54:51,080:INFO: Training loss over epoch 19: 0.1206
+2022-03-30 09:54:51,081:INFO: Training acc over epoch 19: 0.9560
+2022-03-30 09:54:51,390:INFO: Validation loss: 0.1078
+2022-03-30 09:54:51,391:INFO: Validation acc: 0.9676
+2022-03-30 09:54:51,391:INFO: Time taken: 4.63
