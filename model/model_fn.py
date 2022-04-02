@@ -6,6 +6,7 @@ import logging
 import numpy as np
 import time
 import os
+from pathlib import Path
 
 import tensorflow as tf
 from tensorflow import keras
@@ -114,7 +115,7 @@ def test_step(model, x, y, metrices):
 
 
 
-def model_fn(train_data, val_data, params, tf_log_path, reuse=False):
+def model_fn(train_data, val_data, params, tf_log_path, restore_weights=None):
     """Compute training and validation steps. Also setup tensorboard for visualizations.
     
     Arguments:
@@ -122,6 +123,10 @@ def model_fn(train_data, val_data, params, tf_log_path, reuse=False):
         val_data: (tf.data.Dataset) validation dataset
         params: (Params) hyperparameter of the model
         tf_log_path: (str) tf summary logs directory
+        restore_weights: (model.weights) restore weights to continue training
+    
+    Retruns:
+        model: trained model
     """
     # Instantiate an optimizer, loss, acc_metrics
     model_metrices = {"optimizer": keras.optimizers.Adam(learning_rate=params.learning_rate),
@@ -139,7 +144,13 @@ def model_fn(train_data, val_data, params, tf_log_path, reuse=False):
 
     # Get model
     model = build_model(params)
-    
+
+    # Reuse weights if required
+    if restore_weights is not None:
+        model.load_weights(restore_weights)
+        logging.info("Weights restored...")
+
+
     step = 0
     epochs = params.num_epochs
     # epochs = 1
@@ -194,11 +205,41 @@ def model_fn(train_data, val_data, params, tf_log_path, reuse=False):
         model_metrices['val_acc_metric'].reset_states()
         model_metrices['train_loss'].reset_states()
         model_metrices['test_loss'].reset_states()
+    
+    return model
 
+def evaluate(test_data, params, trained_weights):
+    """Evaluate model using test data and trained_weights
+    
+    Arguments:
+        test_data: (tf.data.Dataset) test dataset
+        params: (Params) hyperparameter of the model
+        trained_weights: (model.weights) restore trained weights
+    """
+    # Instantiate an optimizer, loss, acc_metrics
+    model_metrices = {
+            "loss_fn": keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+            "test_loss": tf.keras.metrics.Mean('test_loss', dtype=tf.float32),
+            "val_acc_metric": keras.metrics.SparseCategoricalAccuracy()}
+    
+    # Get model
+    model = build_model(params)
 
+    # Restore trained weights
+    if trained_weights is not None:
+        model.load_weights(trained_weights)
+        logging.info("Weights restored...")
+    
+    # Run validation loop at the end of each epoch
+    for x_batch_test, y_batch_test in test_data:
+        test_step(model, x_batch_test, y_batch_test, model_metrices)
+    
+    test_acc = model_metrices['val_acc_metric'].result()
+    test_loss = model_metrices['test_loss'].result()
 
-
-
+    # Log results
+    logging.info(f"Test loss: {float(test_loss):.4f}")
+    logging.info(f"Test accuracy: {float(test_acc):.4f}")
 
 
 

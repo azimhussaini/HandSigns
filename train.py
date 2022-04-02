@@ -5,6 +5,7 @@ import logging
 import os
 import random
 from datetime import datetime
+from pathlib import Path
 
 import tensorflow as tf
 from tensorflow import keras
@@ -23,7 +24,7 @@ parser.add_argument('--model_dir', default="experiments/base_model", metavar='',
 parser.add_argument('--data_dir', default='data/64x64_SIGNS', metavar='',
                     help = "Directory containing the dataset")
 parser.add_argument("--restore_from", default=None, metavar='',
-                    help="Optional, directory or file containing the weights ro reload before training")
+                    help="Optional, directory or file containing the weights to reload before training")
 parser.add_argument("-H", "--hp_search", default='False', metavar='',
                     help="Set it to True if you want to run hyperparameters search using tensorboard")
 
@@ -38,13 +39,20 @@ if __name__ == '__main__':
     params = Params(json_path)
 
     # Check if we are not overwriting some previous experiment
-    model_dir_has_best_weights = os.path.isdir(os.path.join(args.model_dir, "best_weights"))
+    model_dir_has_best_weights = os.path.isdir(os.path.join(args.model_dir, "model_weights", "best_weights"))
     overwritting = model_dir_has_best_weights and args.restore_from is None
     assert not overwritting, "Weights found in model_dir, aborting to avoid overwrite"
+
+    # check restore directory
+    if args.restore_from is not None:
+        restore_path = Path(args.restore_from) / "weights"
+    else:
+        restore_path = None
 
     # Set the logger and tf summary
     time_stamp =  datetime.now().strftime("%Y%m%d-%H%M%S")
     log_path = os.path.join(args.model_dir, "train_log")
+    print(log_path)
     set_logger(log_path)
     tf_summary_log_path = os.path.join(args.model_dir, "tf_logs", time_stamp)
     hp_search_log_path = os.path.join(args.model_dir, "hp_search")
@@ -71,7 +79,6 @@ if __name__ == '__main__':
     train_input = input_fn(True, train_filenames, train_labels, params)
     eval_input = input_fn(False, eval_filenames, eval_labels, params)
 
-    print("ArgsParse hp_search:", args.hp_search)
 
     # Training and evaluation
     if args.hp_search=="True":
@@ -79,7 +86,11 @@ if __name__ == '__main__':
         hp_search(train_input, eval_input, params, epochs=params.hp_search_epochs, hp_log_path=hp_search_log_path)
     else:
         logging.info(f"Starting training for {params.num_epochs} epoch(s)")
-        model_fn(train_input, eval_input, params, tf_summary_log_path)
+        model = model_fn(train_input, eval_input, params, tf_summary_log_path, restore_weights=restore_path)
+        save_weights_path = save_weights_path = Path(args.model_dir) / "model_weights" / time_stamp / "weights"
+        logging.info(f"Saving weights at {save_weights_path}")
+        model.save_weights(save_weights_path)
+
         
 
 
